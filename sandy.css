@@ -1,0 +1,47 @@
+.report-container {
+    border: 1px solid black;
+    margin: 10px;
+
+}
+
+.school-details-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.banner-bottom-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.list-container {
+    list-style-type: none;
+}
+
+.signature-columns {
+    height: 120px;
+}
+
+.hr-line{
+    background-color: black;
+}
+
+.heading-center{
+    text-align: center;
+}
+
+.highlight-text{
+    font-weight: bold;
+}
+
+
+.details-list-container{
+    display: flex;
+    width:50%;
+}
+
+.details-container{
+    display: flex;
+}

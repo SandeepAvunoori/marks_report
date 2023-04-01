@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBn+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="sandy.css" />
+</head>
+
+
+
+<body>
+    <div class="report-container">
+        
+        <div class="school-details-container ">
+            <h4>Maharaja International school</h4>
+            <p>Near Abhilisha Colony,Dewas Road, Affiliated to CBSE , Affiliation No :103131157, ph :9926090005</p>
+            <p> Visit us at : www.maharajainternationalschoolujjain.com</p>
+        </div>
+
+        
+        <div class="banner-bottom-section">
+            <p>REPORT CARD</p>
+            <P>ACADEMIC SESSION :2022-2023</P>
+        </div>
+        <hr class="hr-line"/>
+
+        <div class="student-details-container">
+            <div class="details-container">
+               
+                <div class="details-list-container">
+                    <ul class="list-container">
+                        <li>Scholar No </li>
+                        <li>Roll No </li>
+                        <li>Fathers Name </li>
+                        <li>
+                            Attendance
+                        </li>
+                    </ul>
+
+
+                    <ul class="list-container">
+                        <li>:</li>
+                        <li>:</li>
+                        <li>:</li>
+                        <li>:</li>
+                    </ul>
+
+
+                    <ul class="list-container">
+                        <li>-</li>
+                        <li id="rollNumber">-</li>
+                        <li id="fatherName">-</li>
+                        <li>-</li>
+                    </ul>
+
+
+
+
+                </div>
+
+                <div class="details-list-container">
+                    <ul class="list-container">
+                        <li>Class</li>
+                        <li>Name of Student</li>
+                        <li>Mothers Name</li>
+                        <li>
+                            Date of Birth
+                        </li>
+                    </ul>
+
+                    <ul class="list-container">
+                        <li>:</li>
+                        <li>:</li>
+                        <li>:</li>
+                        <li>:</li>
+                    </ul>
+
+
+                    <ul class="list-container">
+                        <li id="className">-</li>
+                        <li id="studnetName">-</li>
+                        <li id="motherName">-</li>
+                        <li id="DOB">-</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <table border="1" style="width:100%">
+            <tr class="heading-center">
+                <th rowspan="2">Subjects</th>
+                <th  colspan="3">Term I </th>
+                <th colspan="3">Term II</th>
+                <th colspan="2">Final Result</th>
+            </tr>
+
+            <tr class="heading-center">
+                <th>Best Score PT-I,II <br /> 20</th>
+                <th>Term I <br /> 80 </th>
+                <th>Marks obt <br /> 100</th>
+                <th>Best Score PT-III,IV <br /> 20</th>
+                <th>Term II <br /> 80 </th>
+                <th>Marks obt <br /> 100</th>
+                <th>T-I + t-II <br /> 200</th>
+                <th>Grade</th>
+            </tr>
+
+            <tr class="heading-center">
+                <th>Telugu</th>
+                <td id="intTeluguTerm1"></td>
+                <td id="extTeluguTerm1"></td>
+                <td id="teluguTotal1"></td>
+                <td id="intTeluguTerm2"></td>
+                <td id="extTeluguTerm2"></td>
+                <td id="teluguTotal2"></td>
+                <td id="finalResultTelugu"></td>
+                <td id="gradeTelugu"></td>
+
+            </tr>
+
+            <tr class="heading-center">
+                <th>Hindi</th>
+                <td id="intHindiTerm1"></td>
+                <td id="extHindiTerm1"></td>
+                <td id="hindiTotal1"></td>
+                <td id="intHindiTerm2"></td>
+                <td id="extHindiTerm2"></td>
+                <td id="hindiTotal2"></td>
+                <td id="finalResultHindi"></td>
+                <td id="gradeHindi"></td>
+
+            </tr>
+
+            <tr class="heading-center">
+                <th>English</th>
+                <td id="intEnglishTerm1"></td>
+                <td id="extEnglishTerm1"></td>
+                <td id="englishTotal1"></td>
+                <td id="intEnglishTerm2"></td>
+                <td id="extEnglishTerm2"></td>
+                <td id="englishTotal2"></td>
+                <td id="finalResultEnglish"></td>
+                <td id="gradeEnglish"></td>
+
+            </tr>
+
+            <tr class="heading-center">
+                <th>Mathematics</th>
+                <td id="intMathsTerm1"></td>
+                <td id="extMathsTerm1"></td>
+                <td id="mathsTotal1"></td>
+                <td id="intMathsTerm2"></td>
+                <td id="extMathsTerm2"></td>
+                <td id="mathsTotal2"></td>
+                <td id="finalResultMaths"></td>
+                <td id="gradeMaths"></td>
+
+            </tr>
+
+            <tr class="heading-center">
+                <th>Computer Science</th>
+                <td id="intCsTerm1"></td>
+                <td id="extCsTerm1"></td>
+                <td id="csTotal1"></td>
+                <td id="intCsTerm2"></td>
+                <td id="extCsTerm2"></td>
+                <td id="csTotal2"></td>
+                <td id="finalResultCs"></td>
+                <td id="gradeCs"></td>
+
+            </tr>
+
+            <tr class="heading-center">
+                <th>Social Studies</th>
+                <td id="intSSTerm1"></td>
+                <td id="extSSTerm1"></td>
+                <td id="ssTotal1"></td>
+                <td id="intSSTerm2"></td>
+                <td id="extSSTerm2"></td>
+                <td id="ssTotal2"></td>
+                <td id="finalResultSS"></td>
+                <td id="gradeSS"></td>
+
+            </tr>
+
+
+            <tr class="heading-center highlight-text">
+                <th>Total</th>
+                <td id="TotalintTerm1"></td>
+                <td id="TotalextTerm1"></td>
+                <td id="Totalterm1"></td>
+                <td id="TotalintTerm2"></td>
+                <td id="TotalextTerm2"></td>
+                <td id="Totalterm2"></td>
+                <td id="bothTermsTotal"></td>
+                <td id="finalGrade"></td>
+
+            </tr>
+
+
+
+        </table>
+
+        <div class="d-flex justify-content-around mt-4">
+            <p class="highlight-text">Result : <span id="result"></span> </p>
+            <p class="highlight-text">Percentage : <span id="percentage"></span>%</p>
+            <p class="highlight-text">Grade : <span id="grade"></span></p>
+        </div>
+
+        <table style="width:100%" border="1">
+            <tr class="heading-center">
+                <th>Parents</th>
+                <th>Class Teacher</th>
+                <th>Principal</th>
+            </tr>
+
+            <tr>
+
+                <td class="signature-columns" ></td>
+                <td></td>
+                <td></td>
+            </tr>
+
+        </table>
+    </div>
+
+
+
+
+    <script src="sandy.js"></script>
+
+</body>
+
+</html>
